@@ -1,0 +1,138 @@
+/* Fuente ROBOTO */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #ffb6c1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid #ff80ab;
+}
+
+header h1 {
+  margin-left: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #ffe6f0;
+}
+
+/* Main */
+main {
+  background-color: #ffe6f0;
+  padding: 2rem;
+}
+
+/* Intro */
+.intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.intro h2 {
+  color: #d63384;
+}
+
+.intro h3 {
+  color: #ff4d88;
+}
+
+.intro-img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);
+  text-align: center;
+  border: 2px solid #ffb6c1;
+}
+
+.card h4 {
+  color: #e91e63;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  background-color: #ff80ab;
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background-color: #ec407a;
+}
+
+/* Footer */
+footer {
+  background-color: #ffb6c1;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-top: 4px solid #ff80ab;
+}
+
+/* Tablet*/
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Escritorio */
+@media (min-width: 1024px) {
+  .intro {
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  .intro-texto, .intro-imagen {
+    flex: 1;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
